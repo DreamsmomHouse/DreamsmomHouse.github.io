@@ -16,6 +16,13 @@
         "location": "602",
         "allow": "allNotAllow",
         "temp": "0℃"
+      },
+      {
+        "name": "策划组|梦妈杯DMC",
+        "stats": "不开放",
+        "location": "603",
+        "allow": "allNotAllow",
+        "temp": "未知"
       }
     ]
   },
