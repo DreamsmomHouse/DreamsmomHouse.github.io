@@ -7,21 +7,19 @@ window.onload = () => {
 
 const loadTable = async () => {
   result = await downloadAssets('data.json');
-  table = document.getElementById('table');
 
   for (i = 0; i < 8; i++) {
-    let counter = 0;
-    for (let { } in result[i]['data']) {
+    result[i]['data'].reduce((p,c,index)=> {
       buttonNode = document.createElement('button');
-      buttonNode.className = result[i]['data'][counter]['allow'];
+      buttonNode.className = c.allow;
       buttonNode.style.position = 'absolute';
-      buttonNode.style.marginLeft = `${300 + 300 * counter}px`;
+      buttonNode.style.marginLeft = `${300 + 300 * index}px`;
       buttonNode.style.marginTop = `${50 * i + 55}px`;
       buttonNode.style.width = '300px';
       buttonNode.style.height = '50px';
-      buttonNode.name = result[i]['data'][counter]['location'];
+      buttonNode.name = c.location;
 
-      const id = result[i]['data'][counter]['location'];
+      const id = c.location;
       buttonNode.onclick = () => {
         window.open(`info.html?info&${id}`, '_blank');
       }
@@ -29,12 +27,11 @@ const loadTable = async () => {
       roomNode = document.createElement('span');
       roomNode.className = 'normalClass';
       roomNode.style.width = '300px';
-      roomNode.innerHTML = `${result[i]['data'][counter]['location']} ${result[i]['data'][counter]['name']}<br>
-      ${result[i]['data'][counter]['stats']} 热度：${result[i]['data'][counter]['temp']}`;
+      roomNode.innerHTML = `${c.location} ${c.name}<br>${c.stats} 热度：${c.temp}`;
       buttonNode.appendChild(roomNode);
-      table.appendChild(buttonNode);
-      counter++;
-    }
+      p.appendChild(buttonNode);
+      return p;
+    },document.getElementById('table'))
   }
 }
 
