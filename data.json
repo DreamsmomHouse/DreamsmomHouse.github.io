@@ -42,7 +42,8 @@
         "stats": "开放",
         "location": "502",
         "allow": "allAllow",
-        "temp": "1℃"
+        "temp": "1℃",
+        "del":true
       },
       {
         "name": "猎人游戏群",
@@ -76,7 +77,8 @@
         "stats": "群号：897683779",
         "location": "403",
         "allow": "allAllow",
-        "temp": "未知"
+        "temp": "未知",
+        "del":true
       }
     ]
   },
@@ -96,7 +98,8 @@
         "stats": "开放",
         "location": "302",
         "allow": "allAllow",
-        "temp": "5℃"
+        "temp": "5℃",
+        "del":true
       },
       {
         "name": "模组光影群",
@@ -130,7 +133,8 @@
         "stats": "已解散（终于啊）",
         "location": "203",
         "allow": "allNotAllow",
-        "temp": "NaN℃"
+        "temp": "NaN℃",
+        "del":true
       }
     ]
   },
@@ -143,7 +147,8 @@
         "stats": "已解散",
         "location": "101",
         "allow": "allNotAllow",
-        "temp": "NaN℃"
+        "temp": "NaN℃",
+        "del":true
       },
       {
         "name": "梦子哥的线上茶话会！（舰长群）",

@@ -9,7 +9,9 @@ const loadTable = async () => {
   result = await downloadAssets('data.json');
 
   for (i = 0; i < 8; i++) {
-    result[i]['data'].reduce((p,c,index)=> {
+    result[i]['data'].reduce((p, c, index) => {
+      if (c.del != undefined) return p;
+
       buttonNode = document.createElement('button');
       buttonNode.className = c.allow;
       buttonNode.style.position = 'absolute';
@@ -31,7 +33,7 @@ const loadTable = async () => {
       buttonNode.appendChild(roomNode);
       p.appendChild(buttonNode);
       return p;
-    },document.getElementById('table'))
+    }, document.getElementById('table'))
   }
 }
 
