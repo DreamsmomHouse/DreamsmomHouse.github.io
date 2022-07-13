@@ -15,7 +15,7 @@ const loadTable = async () => {
     let table = document.getElementById('table');
     floorName = document.createElement('div');
     floorName.innerHTML = `${result[i]['floor_name']} ${result[i]['floor_util']}`;
-    floornAME.style.position='absolute';
+    floorName.style.position='absolute';
     floorName.className = 'table_left';
     floorName.style.marginLeft = '30px';
     floorName.style.marginTop = `${50 * i + 55}px`
