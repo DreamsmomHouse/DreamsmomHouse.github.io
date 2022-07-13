@@ -1,4 +1,5 @@
 window.onload = () => {
+  if (location.search == "?showall") showHide = true;
   loadTable();
   loadMeme();
   clock();
@@ -9,8 +10,8 @@ const loadTable = async () => {
   result = await downloadAssets('data.json');
 
   for (i = 0; i < 8; i++) {
-    result[i]['data'].reduce((p, c, index) => {
-      if (c.del != undefined) return p;
+    result[i]['data'].reduce((p, c) => {
+      if (c.del != undefined && !showHide) return p;
 
       buttonNode = document.createElement('button');
       buttonNode.className = c.allow;
@@ -34,7 +35,7 @@ const loadTable = async () => {
       p.ele.appendChild(buttonNode);
       p.id++;
       return p;
-    }, {ele:document.getElementById('table'),id:0})
+    }, { ele: document.getElementById('table'), id: 0 })
   }
 }
 
