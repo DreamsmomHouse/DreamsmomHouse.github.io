@@ -35,7 +35,7 @@
       },
       {
         "name": "梦妈的Hypixel群",
-        "stats": "开放",
+        "stats": "已解散",
         "location": "502",
         "allow": "allAllow",
         "del": true
@@ -66,7 +66,7 @@
       },
       {
         "name": "纸冤直播通知群",
-        "stats": "群号：897683779",
+        "stats": "群号：897683779（已解散）",
         "location": "403",
         "allow": "allAllow",
         "del": true
@@ -85,7 +85,7 @@
       },
       {
         "name": "冰火的开发群",
-        "stats": "开放",
+        "stats": "已解散",
         "location": "302",
         "allow": "allAllow",
         "del": true
@@ -150,6 +150,18 @@
         "name": "梦妈线上击剑群（避难所）",
         "stats": "开放",
         "location": "104",
+        "allow": "allAllow"
+      },
+      {
+        "name": "0709梦妈生贺组",
+        "stats": "群号:857201710",
+        "location": "105",
+        "allow": "allAllow"
+      },
+      {
+        "name": "手书制作组",
+        "stats": "群号:705367597",
+        "location": "106",
         "allow": "allAllow"
       }
     ]
