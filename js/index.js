@@ -18,7 +18,7 @@ const loadTable = async () => {
     floorName.style.position='absolute';
     floorName.className = 'table_left';
     floorName.style.marginLeft = '30px';
-    floorName.style.marginTop = `${50 * i + 70}px`
+    floorName.style.marginTop = `${50 * i + 62}px`
     table.appendChild(floorName);
     result[i]['data'].reduce((p, c) => {
       if (c.del != undefined && !showHide) return p;
