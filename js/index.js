@@ -15,7 +15,7 @@ const loadTable = async () => {
       buttonNode = document.createElement('button');
       buttonNode.className = c.allow;
       buttonNode.style.position = 'absolute';
-      buttonNode.style.marginLeft = `${300 + 300 * index}px`;
+      buttonNode.style.marginLeft = `${300 + 300 * p.id}px`;
       buttonNode.style.marginTop = `${50 * i + 55}px`;
       buttonNode.style.width = '300px';
       buttonNode.style.height = '50px';
@@ -29,11 +29,12 @@ const loadTable = async () => {
       roomNode = document.createElement('span');
       roomNode.className = 'normalClass';
       roomNode.style.width = '300px';
-      roomNode.innerHTML = `${c.location} ${c.name}<br>${c.stats} 热度：${c.temp}`;
+      roomNode.innerHTML = `${c.location} ${c.name}<br>${c.stats}`;
       buttonNode.appendChild(roomNode);
-      p.appendChild(buttonNode);
+      p.ele.appendChild(buttonNode);
+      p.id++;
       return p;
-    }, document.getElementById('table'))
+    }, {ele:document.getElementById('table'),id:0})
   }
 }
 

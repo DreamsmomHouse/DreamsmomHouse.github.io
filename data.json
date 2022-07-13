@@ -7,22 +7,19 @@
         "name": "妈妈桑的管理群",
         "stats": "不开放",
         "location": "601",
-        "allow": "allNotAllow",
-        "temp": "0℃"
+        "allow": "allNotAllow"
       },
       {
         "name": "梦妈新世纪管理组",
         "stats": "不开放",
         "location": "602",
-        "allow": "allNotAllow",
-        "temp": "0℃"
+        "allow": "allNotAllow"
       },
       {
         "name": "策划组|梦妈杯DMC",
         "stats": "不开放",
         "location": "603",
-        "allow": "allNotAllow",
-        "temp": "未知"
+        "allow": "allNotAllow"
       }
     ]
   },
@@ -34,23 +31,20 @@
         "name": "小游戏约局群",
         "stats": "锁群",
         "location": "501",
-        "allow": "captainAllow",
-        "temp": "0℃"
+        "allow": "captainAllow"
       },
       {
         "name": "梦妈的Hypixel群",
         "stats": "开放",
         "location": "502",
         "allow": "allAllow",
-        "temp": "1℃",
-        "del":true
+        "del": true
       },
       {
         "name": "猎人游戏群",
         "stats": "群号：937348395",
         "location": "503",
-        "allow": "allAllow",
-        "temp": "100℃"
+        "allow": "allAllow"
       }
     ]
   },
@@ -62,23 +56,20 @@
         "name": "梦妈直播通知群（禁言）",
         "stats": "群号：698256895",
         "location": "401",
-        "allow": "allAllow",
-        "temp": "未知"
+        "allow": "allAllow"
       },
       {
         "name": "直播通知群（非官方）",
         "stats": "开放情况未知",
         "location": "402",
-        "allow": "allAllow",
-        "temp": "0℃"
+        "allow": "allAllow"
       },
       {
         "name": "纸冤直播通知群",
         "stats": "群号：897683779",
         "location": "403",
         "allow": "allAllow",
-        "temp": "未知",
-        "del":true
+        "del": true
       }
     ]
   },
@@ -90,23 +81,20 @@
         "name": "Xor VII Launcher Development",
         "stats": "锁群/202成员可进",
         "location": "301",
-        "allow": "inviteAllow",
-        "temp": "0℃"
+        "allow": "inviteAllow"
       },
       {
         "name": "冰火的开发群",
         "stats": "开放",
         "location": "302",
         "allow": "allAllow",
-        "temp": "5℃",
-        "del":true
+        "del": true
       },
       {
         "name": "模组光影群",
         "stats": "开放",
         "location": "303",
-        "allow": "allAllow",
-        "temp": "0℃"
+        "allow": "allAllow"
       }
     ]
   },
@@ -118,23 +106,20 @@
         "name": "梦妈的smp服务器群",
         "stats": "有审核",
         "location": "201",
-        "allow": "fanAllow",
-        "temp": "500℃"
+        "allow": "fanAllow"
       },
       {
         "name": "DreamsMom Xor SMP",
         "stats": "锁群/进服问卷",
         "location": "202",
-        "allow": "inviteAllow",
-        "temp": "50℃"
+        "allow": "inviteAllow"
       },
       {
         "name": "梦妈的smp服务器旧群",
         "stats": "已解散（终于啊）",
         "location": "203",
         "allow": "allNotAllow",
-        "temp": "NaN℃",
-        "del":true
+        "del": true
       }
     ]
   },
@@ -147,29 +132,25 @@
         "stats": "已解散",
         "location": "101",
         "allow": "allNotAllow",
-        "temp": "NaN℃",
-        "del":true
+        "del": true
       },
       {
         "name": "梦子哥的线上茶话会！（舰长群）",
         "stats": "锁群",
         "location": "102",
-        "allow": "captainAllow",
-        "temp": "150℃"
+        "allow": "captainAllow"
       },
       {
         "name": "学习资料群",
         "stats": "开放（需要密码）",
         "location": "103",
-        "allow": "inviteAllow",
-        "temp": "75℃"
+        "allow": "inviteAllow"
       },
       {
         "name": "梦妈线上击剑群（避难所）",
         "stats": "开放",
         "location": "104",
-        "allow": "allAllow",
-        "temp": "120℃"
+        "allow": "allAllow"
       }
     ]
   },
@@ -181,8 +162,7 @@
         "name": "避难所",
         "stats": "开放",
         "location": "B101",
-        "allow": "allAllow",
-        "temp": "未知"
+        "allow": "allAllow"
       }
     ]
   },
@@ -194,8 +174,7 @@
         "name": "亲友群",
         "stats": "有审核，但是很严",
         "location": "B201",
-        "allow": "allNotAllow",
-        "temp": "1000℃"
+        "allow": "allNotAllow"
       }
     ]
   }
