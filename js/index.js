@@ -1,3 +1,5 @@
+let showHide = false;
+
 window.onload = () => {
   if (location.search == "?showall") showHide = true;
   loadTable();
