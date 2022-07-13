@@ -120,3 +120,8 @@
   transition-timing-function: ease;
   transition-delay: 0s;
 }
+
+.table_left{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+}

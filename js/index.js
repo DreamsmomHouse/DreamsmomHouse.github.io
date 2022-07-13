@@ -12,6 +12,13 @@ const loadTable = async () => {
   result = await downloadAssets('data.json');
 
   for (i = 0; i < 8; i++) {
+    let table = document.getElementById('table');
+    floorName = document.createElement('div');
+    floorName.innerHTML = `${result[i]['floor_name']} ${result[i]['floor_util']}`;
+    floorName.className = 'table_left';
+    buttonNode.style.marginLeft = '30px';
+    buttonNode.style.marginTop = `${50 * i + 55}px`
+    table.appendChild(floorName);
     result[i]['data'].reduce((p, c) => {
       if (c.del != undefined && !showHide) return p;
 
@@ -37,7 +44,7 @@ const loadTable = async () => {
       p.ele.appendChild(buttonNode);
       p.id++;
       return p;
-    }, { ele: document.getElementById('table'), id: 0 })
+    }, { ele: table, id: 0 })
   }
 }
 
