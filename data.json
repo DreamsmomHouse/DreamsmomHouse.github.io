@@ -1,7 +1,7 @@
 [
   {
     "floor_name": "6层",
-    "floor_util": "高管层",
+    "floor_util": "高管",
     "data": [
       {
         "name": "妈妈桑的管理群",
@@ -14,18 +14,12 @@
         "stats": "不开放",
         "location": "602",
         "allow": "allNotAllow"
-      },
-      {
-        "name": "策划组|梦妈杯DMC",
-        "stats": "不开放",
-        "location": "603",
-        "allow": "allNotAllow"
       }
     ]
   },
   {
     "floor_name": "5层",
-    "floor_util": "开黑层",
+    "floor_util": "开黑",
     "data": [
       {
         "name": "小游戏约局群",
@@ -50,7 +44,7 @@
   },
   {
     "floor_name": "4层",
-    "floor_util": "直播层",
+    "floor_util": "直播",
     "data": [
       {
         "name": "梦妈直播通知群（禁言）",
@@ -75,7 +69,7 @@
   },
   {
     "floor_name": "3层",
-    "floor_util": "开发层",
+    "floor_util": "开发",
     "data": [
       {
         "name": "Xor VII Launcher Development",
@@ -100,7 +94,7 @@
   },
   {
     "floor_name": "2层",
-    "floor_util": "SMP层",
+    "floor_util": "SMP",
     "data": [
       {
         "name": "梦妈的smp服务器群",
@@ -125,21 +119,8 @@
   },
   {
     "floor_name": "1层",
-    "floor_util": "交流层",
+    "floor_util": "新交流",
     "data": [
-      {
-        "name": "妈妈在此！（1群）",
-        "stats": "已解散",
-        "location": "101",
-        "allow": "allNotAllow",
-        "del": true
-      },
-      {
-        "name": "梦子哥的线上茶话会！（舰长群）",
-        "stats": "锁群",
-        "location": "102",
-        "allow": "captainAllow"
-      },
       {
         "name": "学习资料群",
         "stats": "开放（需要密码）",
@@ -149,44 +130,57 @@
       {
         "name": "梦妈线上击剑群（避难所）",
         "stats": "开放",
-        "location": "104",
+        "location": "新101",
         "allow": "allAllow"
+      }
+    ]
+  },
+  {
+    "floor_name": "G层",
+    "floor_util": "远古交流",
+    "data": [
+      {
+        "name": "妈妈在此！（1群）",
+        "stats": "已解散",
+        "location": "G01",
+        "allow": "allNotAllow",
+        "del": true
+      },
+      {
+        "name": "梦子哥的线上茶话会！（舰长群）",
+        "stats": "锁群",
+        "location": "G02",
+        "allow": "captainAllow"
+      },
+      {
+        "name": "亲友群",
+        "stats": "有审核，但是很严",
+        "location": "G03",
+        "allow": "allNotAllow"
+      }
+    ]
+  },
+  {
+    "floor_name": "B层",
+    "floor_util": "大声密谋",
+    "data": [
+      {
+        "name": "策划组|梦妈杯DMC",
+        "stats": "不开放",
+        "location": "B01",
+        "allow": "allNotAllow"
       },
       {
         "name": "0709梦妈生贺组",
         "stats": "群号:857201710",
-        "location": "105",
+        "location": "B02",
         "allow": "allAllow"
       },
       {
         "name": "手书制作组",
         "stats": "群号:705367597",
-        "location": "106",
+        "location": "B03",
         "allow": "allAllow"
-      }
-    ]
-  },
-  {
-    "floor_name": "B1层",
-    "floor_util": "紧急场所",
-    "data": [
-      {
-        "name": "避难所",
-        "stats": "开放",
-        "location": "B101",
-        "allow": "allAllow"
-      }
-    ]
-  },
-  {
-    "floor_name": "B2层",
-    "floor_util": "远古层",
-    "data": [
-      {
-        "name": "亲友群",
-        "stats": "有审核，但是很严",
-        "location": "B201",
-        "allow": "allNotAllow"
       }
     ]
   }
