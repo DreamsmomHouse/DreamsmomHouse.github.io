@@ -100,11 +100,6 @@ const openFanPage = () => {
   window.open(url, '_blank');
 }
 
-const openUpdateLog = () => {
-  let url = document.baseURI.replace('index.html', '').replace('index', '') + 'info.html?UpdateLog';
-  window.open(url, '_blank');
-}
-
 const loadConsoleMessage = () => {
   console.log("                            _ooOoo_ ");
   console.log("                           o8888888o ");
