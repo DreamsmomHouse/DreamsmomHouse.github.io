@@ -57,13 +57,6 @@
         "stats": "开放情况未知",
         "location": "402",
         "allow": "allAllow"
-      },
-      {
-        "name": "纸冤直播通知群",
-        "stats": "群号：897683779（已解散）",
-        "location": "403",
-        "allow": "allAllow",
-        "del": true
       }
     ]
   },
