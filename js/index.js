@@ -1,7 +1,9 @@
 let showHide = false;
 
+const baseURI = 'dreamsmomhouse.github.io';
+
 window.onload = () => {
-  if (location.search == "?showall") showHide = true;
+  showHide = location.search == "?showall";
   loadTable();
   loadMeme();
   clock();
@@ -15,7 +17,7 @@ const loadTable = async () => {
     let table = document.getElementById('table');
     floorName = document.createElement('div');
     floorName.innerHTML = `${result[i]['floor_name']} ${result[i]['floor_util']}`;
-    floorName.style.position='absolute';
+    floorName.style.position = 'absolute';
     floorName.className = 'table_left';
     floorName.style.marginLeft = '30px';
     floorName.style.marginTop = `${50 * i + 62}px`
@@ -33,9 +35,7 @@ const loadTable = async () => {
       buttonNode.name = c.location;
 
       const id = c.location;
-      buttonNode.onclick = () => {
-        window.open(`info.html?info&${id}`, '_blank');
-      }
+      buttonNode.onclick = () => window.open(`${baseURI}/info.html?info&${id}`, '_blank');
 
       roomNode = document.createElement('span');
       roomNode.className = 'normalClass';
@@ -82,9 +82,8 @@ const betterShow = (num, digit) => {
 }
 setInterval(clock, 1000);
 
-const dxzp = () => {
-  window.open('https://www.bilibili.com/video/BV1GJ411x7h7', '_blank');
-}
+const dxzp = () => window.open('https://www.bilibili.com/video/BV1GJ411x7h7', '_blank');
+
 
 const downloadAssets = async (url) => {
   try {
@@ -95,10 +94,7 @@ const downloadAssets = async (url) => {
   }
 }
 
-const openFanPage = () => {
-  let url = document.baseURI.replace('index.html', '').replace('index', '') + 'info.html?fan';
-  window.open(url, '_blank');
-}
+const openFanPage = () => window.open(`${baseURI}/info.html?fan`, '_blank');
 
 const loadConsoleMessage = () => {
   console.log("                            _ooOoo_ ");
