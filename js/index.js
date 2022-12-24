@@ -82,7 +82,7 @@ const betterShow = (num, digit) => {
 }
 setInterval(clock, 1000);
 
-const dxzp = () => {window.open('https://www.bilibili.com/video/BV1GJ411x7h7', '_blank');}
+const dxzp = () => { window.open('https://www.bilibili.com/video/BV1GJ411x7h7', '_blank'); }
 
 const downloadAssets = async (url) => {
   try {
@@ -93,7 +93,10 @@ const downloadAssets = async (url) => {
   }
 }
 
-const openFanPage = () => { window.open(`${baseURI}/info.html?fan`, '_blank'); }
+const openFanPage = () => {
+  console.log(`${baseURI}/info.html?fan`);
+  window.open(`${baseURI}/info.html?fan`, '_blank');
+}
 
 const loadConsoleMessage = () => {
   console.log("                            _ooOoo_ ");
