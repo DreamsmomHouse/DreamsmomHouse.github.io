@@ -1,6 +1,6 @@
 let showHide = false;
 
-const baseURI = 'dreamsmomhouse.github.io';
+const baseURI = 'https://dreamsmomhouse.github.io';
 
 window.onload = () => {
   showHide = location.search == "?showall";
@@ -82,8 +82,7 @@ const betterShow = (num, digit) => {
 }
 setInterval(clock, 1000);
 
-const dxzp = () => window.open('https://www.bilibili.com/video/BV1GJ411x7h7', '_blank');
-
+const dxzp = () => {window.open('https://www.bilibili.com/video/BV1GJ411x7h7', '_blank');}
 
 const downloadAssets = async (url) => {
   try {
@@ -94,7 +93,7 @@ const downloadAssets = async (url) => {
   }
 }
 
-const openFanPage = () => window.open(`${baseURI}/info.html?fan`, '_blank');
+const openFanPage = () => { window.open(`${baseURI}/info.html?fan`, '_blank'); }
 
 const loadConsoleMessage = () => {
   console.log("                            _ooOoo_ ");
