@@ -36,9 +36,17 @@
       },
       {
         "name": "猎人游戏群",
-        "stats": "群号：937348395",
+        "stats": "已解散",
         "location": "503",
-        "allow": "allAllow"
+        "allow": "allAllow",
+        "del": true
+      },
+      {
+        "name": "DM's Happy New Year!",
+        "stats": "群号：769708197",
+        "location": "504",
+        "allow": "allAllow",
+        "del": true
       }
     ]
   },
@@ -68,7 +76,8 @@
         "name": "Xor VII Launcher Development",
         "stats": "锁群/202成员可进",
         "location": "301",
-        "allow": "inviteAllow"
+        "allow": "inviteAllow",
+        "del": true
       },
       {
         "name": "冰火的开发群",
@@ -93,7 +102,8 @@
         "name": "梦妈的smp服务器群",
         "stats": "有审核",
         "location": "201",
-        "allow": "fanAllow"
+        "allow": "fanAllow",
+        "del": true
       },
       {
         "name": "DreamsMom Xor SMP",
@@ -158,10 +168,10 @@
     "floor_util": "大声密谋",
     "data": [
       {
-        "name": "策划组|梦妈杯DMC",
-        "stats": "不开放",
+        "name": "日常开黑生产组|Party&Chat",
+        "stats": "群号：754552286",
         "location": "B01",
-        "allow": "allNotAllow"
+        "allow": "allAllow"
       },
       {
         "name": "0709梦妈生贺组",
