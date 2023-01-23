@@ -100,10 +100,9 @@
     "data": [
       {
         "name": "梦妈的smp服务器群",
-        "stats": "有审核",
+        "stats": "有审核（其实服务器已经没了）",
         "location": "201",
-        "allow": "fanAllow",
-        "del": true
+        "allow": "fanAllow"
       },
       {
         "name": "DreamsMom Xor SMP",
@@ -122,43 +121,25 @@
   },
   {
     "floor_name": "1层",
-    "floor_util": "新交流",
-    "data": [
-      {
-        "name": "学习资料群",
-        "stats": "开放（需要密码）",
-        "location": "103",
-        "allow": "inviteAllow"
-      },
-      {
-        "name": "梦妈线上击剑群（避难所）",
-        "stats": "开放",
-        "location": "新101",
-        "allow": "allAllow"
-      }
-    ]
-  },
-  {
-    "floor_name": "G层",
-    "floor_util": "远古交流",
+    "floor_util": "交流层",
     "data": [
       {
         "name": "妈妈在此！（1群）",
         "stats": "已解散",
-        "location": "G01",
+        "location": "101",
         "allow": "allNotAllow",
         "del": true
       },
       {
         "name": "梦子哥的线上茶话会！（舰长群）",
         "stats": "锁群",
-        "location": "G02",
+        "location": "102",
         "allow": "captainAllow"
       },
       {
         "name": "亲友群",
         "stats": "有审核，但是很严",
-        "location": "G03",
+        "location": "103",
         "allow": "allNotAllow"
       }
     ]
@@ -168,21 +149,15 @@
     "floor_util": "大声密谋",
     "data": [
       {
-        "name": "日常开黑生产组|Party&Chat",
-        "stats": "群号：754552286",
-        "location": "B01",
-        "allow": "allAllow"
-      },
-      {
         "name": "0709梦妈生贺组",
         "stats": "群号:857201710",
-        "location": "B02",
+        "location": "B01",
         "allow": "allAllow"
       },
       {
         "name": "手书制作组",
         "stats": "群号:705367597",
-        "location": "B03",
+        "location": "B02",
         "allow": "allAllow"
       }
     ]
