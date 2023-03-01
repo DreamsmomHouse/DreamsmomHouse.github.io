@@ -28,11 +28,10 @@
         "allow": "captainAllow"
       },
       {
-        "name": "梦妈的Hypixel群",
-        "stats": "已解散",
+        "name": "Hypixel开黑组",
+        "stats": "群号：487959018",
         "location": "502",
-        "allow": "allAllow",
-        "del": true
+        "allow": "allAllow"
       },
       {
         "name": "猎人游戏群",
@@ -128,6 +127,13 @@
         "stats": "已解散",
         "location": "101",
         "allow": "allNotAllow",
+        "del": true
+      },
+      {
+        "name": "妈妈在此のReborn",
+        "stats": "群号：338623259",
+        "location": "101-1",
+        "allow": "allAllow",
         "del": true
       },
       {
