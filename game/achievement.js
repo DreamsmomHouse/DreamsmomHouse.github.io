@@ -37,7 +37,7 @@ const achievements = [
         id: 1,
         name: '考古之路I',
         detail: '挖掘10个方块',
-        judge: (config) => config.brush_sand + config.brush_gravel >= 10
+        judge: (config) => config.dig_gravel + config.dig_sand >= 10
     }, {
         id: 2,
         name: '考古之路II',
