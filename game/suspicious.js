@@ -44,7 +44,7 @@ window.addEventListener('load', _ => {
                 destroy.hidden = false;
                 if (d == 10) {
                     clearInterval(interval);
-                    interval = null; brushed = Math.floor(Math.random() * 5) != 0;
+                    interval = null; brushed = Math.floor(Math.random() * 2) != 0;
                     d = 0;
                     destroy.style.backgroundImage = null;
                     destroy_sound.currentTime = 0;
@@ -55,7 +55,7 @@ window.addEventListener('load', _ => {
                     dig_sound.currentTime = 0;
                     dig_sound.play();
                 }
-            }, 0.2 * 1000);
+            }, 0.15 * 1000);
         }
     }
     sand.onmouseup = sand.ontouchend = _ => {

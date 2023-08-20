@@ -1,5 +1,20 @@
 let count = 0;
-const srcList = ['img/suspicious_sand_0.png', 'img/suspicious_sand_1.png', 'img/suspicious_sand_2.png', 'img/suspicious_sand_3.png'];
+const srcList = ['img/suspicious_sand_0.png',
+    'img/suspicious_sand_1.png',
+    'img/suspicious_sand_2.png',
+    'img/suspicious_sand_3.png',
+    'img/sand.png',
+    'img/destroy/destroy_stage_0.png',
+    'img/destroy/destroy_stage_1.png',
+    'img/destroy/destroy_stage_2.png',
+    'img/destroy/destroy_stage_3.png',
+    'img/destroy/destroy_stage_4.png',
+    'img/destroy/destroy_stage_5.png',
+    'img/destroy/destroy_stage_6.png',
+    'img/destroy/destroy_stage_7.png',
+    'img/destroy/destroy_stage_8.png',
+    'img/destroy/destroy_stage_9.png',
+];
 const preLoad = () => {
     var img = new Image();
     img.src = srcList[count];
