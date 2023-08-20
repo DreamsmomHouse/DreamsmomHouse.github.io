@@ -59,22 +59,23 @@ window.addEventListener('load', _ => {
             }, 0.15 * 1000);
         }
     }
+    sand.onmouseup = sand.ontouchend = sand.onmouseleave = sand.ontouchcancel = _ => {
+        destroy.hidden = true;
+        if (p != 4) {
+            p = 0;
+            sand_top.style.backgroundImage = sand_bottom.style.backgroundImage = `url(img/${brushed ? skin.value : `suspicious_${skin.value}_` + p}.png)`;
+            item.style.top = progress[p] + 'px';
+        }
+        if (d >= 0) {
+            d = -1;
+            destroy.style.backgroundImage = null;
+        }
+        if (interval != null)
+            clearInterval(interval);
+        interval = null;
+    }
     skin.onchange = _ => {
-        (sand.onmouseup = sand.ontouchend = _ => {
-            destroy.hidden = true;
-            if (p != 4) {
-                p = 0;
-                sand_top.style.backgroundImage = sand_bottom.style.backgroundImage = `url(img/${brushed ? skin.value : `suspicious_${skin.value}_` + p}.png)`;
-                item.style.top = progress[p] + 'px';
-            }
-            if (d >= 0) {
-                d = -1;
-                destroy.style.backgroundImage = null;
-            }
-            if (interval != null)
-                clearInterval(interval);
-            interval = null;
-        })();
+        sand.onmouseup();
         dig_sound.src = `sound/${skin.value}_step.mp3`;
         destroy_sound.src = `sound/${skin.value}_dig.mp3`;
     }
