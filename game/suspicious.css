@@ -1,0 +1,62 @@
+.sand_top {
+    image-rendering: pixelated;
+    position: relative;
+    background-image: url('./img/suspicious_sand_0.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    width: 200px;
+    height: 100px;
+}
+
+.sand_bottom {
+    image-rendering: pixelated;
+    position: relative;
+    background-image: url('./img/suspicious_sand_0.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0px -100px;
+    background-size: 200px 200px;
+    width: 200px;
+    height: 100px;
+}
+
+.item {
+    image-rendering: pixelated;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+.inventory {
+    image-rendering: pixelated;
+    position: relative;
+    background-image: url('./img/widgets.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0px 0px;
+    background-size: 600px 600px;
+    width: 430px;
+    height: 50px;
+}
+
+.inventory_item {
+    image-rendering: pixelated;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 1px;
+}
+
+.selected{
+    image-rendering: pixelated;
+    position: relative;
+    background-image: url('./img/widgets.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0px -55px;
+    background-size: 600px 600px;
+    width: 55px;
+    height: 50px;
+}
