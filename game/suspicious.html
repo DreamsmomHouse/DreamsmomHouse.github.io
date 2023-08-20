@@ -25,19 +25,19 @@
         <audio id="dig_sound" preload="auto" src="sound/Sand_step1.mp3"></audio>
         <audio id="destroy_sound" preload="auto" src="sound/Sand_dig1.mp3"></audio>
         <div id="inventory" class="inventory" style="position:relative;top:150px;left:-10px;">
-            <div style="position:relative;;left:5px;top:5px;">
-                <img id="inv_item_1" class="inventory_item" src="img/brush.png">
-                <img id="inv_item_2" class="inventory_item" src="img/diamond_shovel.png">
-                <img id="inv_item_3" class="inventory_item">
-                <img id="inv_item_4" class="inventory_item">
-                <img id="inv_item_5" class="inventory_item">
-                <img id="inv_item_6" class="inventory_item">
-                <img id="inv_item_7" class="inventory_item">
-                <img id="inv_item_8" class="inventory_item">
-                <img id="inv_item_9" class="inventory_item">
+            <div style="position:relative;;left:5px;top:5px;pointer-events:none;">
+                <img id="inv_item_1" class="inventory_item" onclick="inventoryClick(0)" src="img/brush.png">
+                <img id="inv_item_2" class="inventory_item" onclick="inventoryClick(1)" src="img/diamond_shovel.png">
+                <img id="inv_item_3" class="inventory_item" onclick="inventoryClick(2)">
+                <img id="inv_item_4" class="inventory_item" onclick="inventoryClick(3)">
+                <img id="inv_item_5" class="inventory_item" onclick="inventoryClick(4)">
+                <img id="inv_item_6" class="inventory_item" onclick="inventoryClick(5)">
+                <img id="inv_item_7" class="inventory_item" onclick="inventoryClick(6)">
+                <img id="inv_item_8" class="inventory_item" onclick="inventoryClick(7)">
+                <img id="inv_item_9" class="inventory_item" onclick="inventoryClick(8)">
             </div>
         </div>
-        <div id="selected" style="position:relative;top:102px;left:-10px;">
+        <div id="selected" style="position:relative;top:102px;left:-10px;pointer-events:none;">
             <div class="selected" style="top:-2px;left:-2px;"></div>
         </div>
     </div>

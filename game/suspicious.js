@@ -78,7 +78,7 @@ window.addEventListener('load', _ => {
 window.addEventListener('keypress', ev => {
     if (Array.from({ length: 9 }).map((_, i) => i + 1 + []).indexOf(ev.key) != -1)
         nowSelected = ev.key - 1;
-    document.getElementById('selected').style.left = (nowSelected * 47 - 10) + 'px';
+    inventoryClick(nowSelected);
 });
 
 window.addEventListener('wheel', ev => {
@@ -86,5 +86,11 @@ window.addEventListener('wheel', ev => {
     if (ev.deltaY < 0) nowSelected--;
     if (nowSelected < 0) nowSelected += 9;
     nowSelected %= 9;
-    document.getElementById('selected').style.left = (nowSelected * 47 - 10) + 'px';
+    inventoryClick(nowSelected);
 })
+
+const inventoryClick = (num) => {
+    console.log(num)
+    nowSelected = num;
+    document.getElementById('selected').style.left = (nowSelected * 47 - 10) + 'px';
+}
