@@ -82,10 +82,36 @@ img {
     height: 50px;
 }
 
-.skin{
+.skin {
     font-size: larger;
     width: 160px;
     text-align: center;
     padding: 5px;
     margin: 0 auto;
+}
+
+.notice {
+    image-rendering: pixelated;
+    position: absolute;
+    background-image: url('./img/toasts.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0px -125px;
+    background-size: 500px 500px;
+    width: 320px;
+    height: 65px;
+    left: calc(50% - 160px);
+    transition: all 0.2s ease-out;
+}
+
+.notice_title {
+    font-size: larger;
+    color: white;
+    position: relative;
+}
+
+.notice_content {
+    font-size: medium;
+    color: white;
+    position: relative;
 }

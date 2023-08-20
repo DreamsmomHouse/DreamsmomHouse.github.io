@@ -30,6 +30,8 @@ window.addEventListener('load', _ => {
                     interval = null;
                     setTimeout(_ => {
                         p = 0; brushed = true;
+                        config['brush_' + skin.value]++;
+                        checkAchievement();
                         sand_top.style.backgroundImage = sand_bottom.style.backgroundImage = `url(img/${skin.value}.png)`;
                         item.style.top = progress[p] + 'px';
                         pop_sound.currentTime = 0;
@@ -47,6 +49,8 @@ window.addEventListener('load', _ => {
                     clearInterval(interval);
                     interval = null; brushed = Math.floor(Math.random() * 2) != 0;
                     d = 0;
+                    config['dig_' + skin.value]++;
+                    checkAchievement();
                     destroy.style.backgroundImage = null;
                     destroy_sound.currentTime = 0;
                     destroy_sound.play();

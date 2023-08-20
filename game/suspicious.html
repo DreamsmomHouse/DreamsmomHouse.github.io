@@ -5,12 +5,18 @@
     <meta charset="utf-8">
     <title>梦妈の快乐小屋</title>
     <script src="preload.js"></script>
+    <script src="achievement.js"></script>
     <script src="suspicious.js"></script>
     <link rel="icon" type="image/png" href="favicon.ico" sizes="192x192">
     <link rel="stylesheet" href="suspicious.css">
 </head>
 
 <body>
+    <div id="notice" class="notice" style="top:-65px">
+        <div id="notice_title" class="notice_title" style="top:10px;left:40px"> </div>
+        <div id="notice_content" class="notice_content" style="top:5px;left:40px"> </div>
+    </div>
+    <audio id="achievement_sound" preload="auto" src="sound/Challenge_complete.mp3"></audio>
     <div style="width:400px;height:400px;margin:0 auto;">
         选择物品
         <select id="skin" class="skin">

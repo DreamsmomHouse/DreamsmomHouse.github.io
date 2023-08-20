@@ -20,6 +20,7 @@ const srcList = [
     'img/destroy/destroy_stage_7.png',
     'img/destroy/destroy_stage_8.png',
     'img/destroy/destroy_stage_9.png',
+    'img/toasts.png'
 ];
 const preLoad = () => {
     var img = new Image();
