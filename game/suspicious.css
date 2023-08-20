@@ -28,6 +28,18 @@ img {
     user-select: none;
 }
 
+.destroy {
+    image-rendering: pixelated;
+    background-image: url('./img/suspicious_sand_0.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+    width: 200px;
+    height: 200px;
+    user-select: none;
+}
+
 .item {
     image-rendering: pixelated;
     position: absolute;
