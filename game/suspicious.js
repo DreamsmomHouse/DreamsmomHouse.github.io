@@ -10,7 +10,7 @@ window.addEventListener('load', _ => {
     let sand_sound = document.getElementById('sand_sound');
     let pop_sound = document.getElementById('pop_sound');
     let item = document.getElementById('item');
-    sand.onmousedown = _ => {
+    sand.onmousedown = sand.ontouchstart = _ => {
         if (p > 0) return;
         item.src = `img/items/${pick(itemList)}.png`;
         interval = setInterval(_ => {
@@ -33,7 +33,7 @@ window.addEventListener('load', _ => {
             }
         }, 1.2 * 1000);
     }
-    sand.onmouseup = _ => {
+    sand.onmouseup = sand.ontouchend = _ => {
         if (p != 4) {
             p = 0;
             sand_top.style.backgroundImage = sand_bottom.style.backgroundImage = `url(img/suspicious_sand_${p}.png)`;
