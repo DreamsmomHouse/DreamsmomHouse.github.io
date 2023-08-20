@@ -81,3 +81,11 @@ img {
     width: 55px;
     height: 50px;
 }
+
+.skin{
+    font-size: larger;
+    width: 160px;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+}

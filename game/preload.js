@@ -1,9 +1,15 @@
 let count = 0;
-const srcList = ['img/suspicious_sand_0.png',
+const srcList = [
+    'img/suspicious_sand_0.png',
     'img/suspicious_sand_1.png',
     'img/suspicious_sand_2.png',
     'img/suspicious_sand_3.png',
     'img/sand.png',
+    'img/suspicious_gravel_0.png',
+    'img/suspicious_gravel_1.png',
+    'img/suspicious_gravel_2.png',
+    'img/suspicious_gravel_3.png',
+    'img/gravel.png',
     'img/destroy/destroy_stage_0.png',
     'img/destroy/destroy_stage_1.png',
     'img/destroy/destroy_stage_2.png',

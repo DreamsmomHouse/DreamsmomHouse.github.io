@@ -4,6 +4,7 @@ let itemList = ['archer_pottery_sherd', 'miner_pottery_sherd', 'prize_pottery_sh
 const pick = array => array[Math.floor(Math.random() * array.length)];
 
 window.addEventListener('load', _ => {
+    let skin = document.getElementById('skin');
     let sand = document.getElementById('sand');
     let destroy = document.getElementById('destroy');
     let sand_top = document.getElementById('sand_top');
@@ -20,7 +21,7 @@ window.addEventListener('load', _ => {
             interval = setInterval(_ => {
                 p++;
                 if (p < 4)
-                    sand_top.style.backgroundImage = sand_bottom.style.backgroundImage = `url(img/suspicious_sand_${p}.png)`;
+                    sand_top.style.backgroundImage = sand_bottom.style.backgroundImage = `url(img/suspicious_${skin.value}_${p}.png)`;
                 item.style.top = progress[p] + 'px';
                 sand_sound.currentTime = 0;
                 sand_sound.play();
@@ -29,7 +30,7 @@ window.addEventListener('load', _ => {
                     interval = null;
                     setTimeout(_ => {
                         p = 0; brushed = true;
-                        sand_top.style.backgroundImage = sand_bottom.style.backgroundImage = `url(img/sand.png)`;
+                        sand_top.style.backgroundImage = sand_bottom.style.backgroundImage = `url(img/${skin.value}.png)`;
                         item.style.top = progress[p] + 'px';
                         pop_sound.currentTime = 0;
                         pop_sound.play();
@@ -49,7 +50,7 @@ window.addEventListener('load', _ => {
                     destroy.style.backgroundImage = null;
                     destroy_sound.currentTime = 0;
                     destroy_sound.play();
-                    sand_top.style.backgroundImage = sand_bottom.style.backgroundImage = `url(img/${brushed ? 'sand' : 'suspicious_sand_' + p}.png)`;
+                    sand_top.style.backgroundImage = sand_bottom.style.backgroundImage = `url(img/${brushed ? skin.value : `suspicious_${skin.value}_` + p}.png)`;
                     destroy.hidden = true;
                 } else {
                     dig_sound.currentTime = 0;
@@ -58,20 +59,24 @@ window.addEventListener('load', _ => {
             }, 0.15 * 1000);
         }
     }
-    sand.onmouseup = sand.ontouchend = _ => {
-        destroy.hidden = true;
-        if (p != 4) {
-            p = 0;
-            sand_top.style.backgroundImage = sand_bottom.style.backgroundImage = `url(img/${brushed ? 'sand' : 'suspicious_sand_' + p}.png)`;
-            item.style.top = progress[p] + 'px';
-        }
-        if (d >= 0) {
-            d = -1;
-            destroy.style.backgroundImage = null;
-        }
-        if (interval != null)
-            clearInterval(interval);
-        interval = null;
+    skin.onchange = _ => {
+        (sand.onmouseup = sand.ontouchend = _ => {
+            destroy.hidden = true;
+            if (p != 4) {
+                p = 0;
+                sand_top.style.backgroundImage = sand_bottom.style.backgroundImage = `url(img/${brushed ? skin.value : `suspicious_${skin.value}_` + p}.png)`;
+                item.style.top = progress[p] + 'px';
+            }
+            if (d >= 0) {
+                d = -1;
+                destroy.style.backgroundImage = null;
+            }
+            if (interval != null)
+                clearInterval(interval);
+            interval = null;
+        })();
+        dig_sound.src = `sound/${skin.value}_step.mp3`;
+        destroy_sound.src = `sound/${skin.value}_dig.mp3`;
     }
 });
 
@@ -90,7 +95,6 @@ window.addEventListener('wheel', ev => {
 })
 
 const inventoryClick = (num) => {
-    console.log(num)
     nowSelected = num;
     document.getElementById('selected').style.left = (nowSelected * 47 - 10) + 'px';
 }
