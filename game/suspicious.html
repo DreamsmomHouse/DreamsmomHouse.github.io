@@ -9,6 +9,7 @@
     <script src="suspicious.js"></script>
     <link rel="icon" type="image/png" href="favicon.png" sizes="192x192">
     <link rel="stylesheet" href="suspicious.css">
+    <link rel="stylesheet" href="suspicious_2.css">
 </head>
 
 <body>
@@ -17,40 +18,60 @@
         <div id="notice_content" class="notice_content" style="top:5px;left:40px"> </div>
     </div>
     <audio id="achievement_sound" preload="auto" src="sound/Challenge_complete.mp3"></audio>
-    <div style="width:400px;height:400px;margin:0 auto;">
-        选择物品
-        <select id="skin" class="skin">
-            <option value="sand">可疑的沙子</option>
-            <option value="gravel">可疑的沙砾</option>
-        </select>
-        <br>选择工具后长按方块使用<br>
-        <div id="sand" style="position:relative;top:100px;left:100px;">
-            <div id="sand_top" class="sand_top" style="z-index:1;"></div>
-            <img id="item" class="item" src="img/wayfinder_armor_trim_smithing_template.png"
-                style="top:100px;left:25px;z-index:2;">
-            <div id="sand_bottom" class="sand_bottom" style="z-index:3;"></div>
-            <div id="destroy" class="destroy" style="z-index:5;position:absolute;top:0px" hidden></div>
-            <div style="position:relative;background-color:white;width:200px;height:100px;z-index:4;"></div>
-        </div>
-        <audio id="sand_sound" preload="auto" src="sound/Brush_brushing1.mp3"></audio>
-        <audio id="pop_sound" preload="auto" src="sound/Pop.mp3"></audio>
-        <audio id="dig_sound" preload="auto" src="sound/sand_step.mp3"></audio>
-        <audio id="destroy_sound" preload="auto" src="sound/sand_dig.mp3"></audio>
-        <div id="inventory" class="inventory" style="position:relative;top:150px;left:-10px;">
-            <div style="position:relative;;left:5px;top:5px;pointer-events:none;">
-                <img id="inv_item_1" class="inventory_item" onclick="inventoryClick(0)" src="img/brush.png">
-                <img id="inv_item_2" class="inventory_item" onclick="inventoryClick(1)" src="img/diamond_shovel.png">
-                <img id="inv_item_3" class="inventory_item" onclick="inventoryClick(2)">
-                <img id="inv_item_4" class="inventory_item" onclick="inventoryClick(3)">
-                <img id="inv_item_5" class="inventory_item" onclick="inventoryClick(4)">
-                <img id="inv_item_6" class="inventory_item" onclick="inventoryClick(5)">
-                <img id="inv_item_7" class="inventory_item" onclick="inventoryClick(6)">
-                <img id="inv_item_8" class="inventory_item" onclick="inventoryClick(7)">
-                <img id="inv_item_9" class="inventory_item" onclick="inventoryClick(8)">
+    <div class="q-card q-mb-xl col"
+        style="background-color: rgb(230, 244, 255);width:450px;height:600px;margin:0 auto;top:100px">
+        <div class="q-item q-item-type row no-wrap" role="listitem">
+            <div class="q-item__section column q-item__section--side justify-center q-item__section--avatar">
+                <div class="q-avatar q-avatar--square" style="font-size: 64px;">
+                    <div class="q-avatar__content row flex-center overflow-hidden">
+                        <img src="img/RescueCaptainOhm.webp" alt="Icon" class="icon">
+                    </div>
+                </div>
+            </div>
+            <div class="q-item__section column q-item__section--main justify-center">
+                <div class="q-item__label text-h6">拯救向导老板！</div>
+                <div class="q-item__label q-item__label--caption text-caption">挖挖挖扫扫扫...</div>
             </div>
         </div>
-        <div id="selected" style="position:relative;top:102px;left:-10px;pointer-events:none;">
-            <div class="selected" style="top:-2px;left:-2px;"></div>
+        <div style="width:400px;height:400px;margin:0 auto;">
+            <div style="text-align:center;">
+                选择物品
+                <select id="skin" class="skin">
+                    <option value="sand">可疑的沙子</option>
+                    <option value="gravel">可疑的沙砾</option>
+                </select>
+                <br>选择工具后长按方块使用<br>
+            </div>
+            <div id="sand" style="position:relative;top:30px;left:100px;">
+                <div id="sand_top" class="sand_top" style="z-index:1;"></div>
+                <img id="item" class="item" src="img/wayfinder_armor_trim_smithing_template.png"
+                    style="top:100px;left:25px;z-index:2;">
+                <div id="sand_bottom" class="sand_bottom" style="z-index:3;"></div>
+                <div id="destroy" class="destroy" style="z-index:5;position:absolute;top:0px" hidden></div>
+                <div style="position:relative;background-color:rgb(230, 244, 255);width:200px;height:100px;z-index:4;">
+                </div>
+            </div>
+            <audio id="sand_sound" preload="auto" src="sound/Brush_brushing1.mp3"></audio>
+            <audio id="pop_sound" preload="auto" src="sound/Pop.mp3"></audio>
+            <audio id="dig_sound" preload="auto" src="sound/sand_step.mp3"></audio>
+            <audio id="destroy_sound" preload="auto" src="sound/sand_dig.mp3"></audio>
+            <div id="inventory" class="inventory" style="position:relative;top:50px;left:-10px;">
+                <div style="position:relative;left:5px;top:5px;pointer-events:none;">
+                    <img id="inv_item_1" class="inventory_item" onclick="inventoryClick(0)" src="img/brush.png">
+                    <img id="inv_item_2" class="inventory_item" onclick="inventoryClick(1)"
+                        src="img/diamond_shovel.png">
+                    <img id="inv_item_3" class="inventory_item" onclick="inventoryClick(2)">
+                    <img id="inv_item_4" class="inventory_item" onclick="inventoryClick(3)">
+                    <img id="inv_item_5" class="inventory_item" onclick="inventoryClick(4)">
+                    <img id="inv_item_6" class="inventory_item" onclick="inventoryClick(5)">
+                    <img id="inv_item_7" class="inventory_item" onclick="inventoryClick(6)">
+                    <img id="inv_item_8" class="inventory_item" onclick="inventoryClick(7)">
+                    <img id="inv_item_9" class="inventory_item" onclick="inventoryClick(8)">
+                </div>
+            </div>
+            <div id="selected" style="position:relative;top:2px;left:-10px;pointer-events:none;">
+                <div class="selected" style="top:-2px;left:-2px;"></div>
+            </div>
         </div>
     </div>
 </body>
