@@ -11,6 +11,7 @@
 
 <body style="background-color: #FFE1E6;" overflow="auto">
   <div id="timer" style="position:absolute;Left:650px;Top:15px;width:300px;" onclick="dxzp()"> </div>
+  <div id="meme" style="position:absolute;Left:100px;Top:50px;width:1000px;" onclick="seeMemeDetail()">  </div>
   <div id="background"> </div>
   <div id="version" style="position:absolute;Left:500px;Top:35px;width:200px;" onclick="openUpdateLog()">v2.6</div>
   <div id="table">
@@ -34,14 +35,12 @@
       <div style="position:relative;left:10px">所有人不可进 </div>
     </div>
   </div>
-  <button id="fanintroduce" class="defaultButton"
-    style="position:absolute;Left:1150px;Top:480px;width:200px;height: 40px;" onclick="openFanPage()">粉丝介绍→</button>
-  <div id="announcement" style="position:absolute;Left:100px;Top:500px;width:1000px;">
-    <h2>大家可以给这些群写介绍哦~，写完发给冰火然后注明写的是哪个群的就行 </h2>
-  </div>
-  <div id="meme" style="position:absolute;Left:100px;Top:600px;width:1000px;" onclick="seeMemeDetail()">
-  </div>
-  <div id="memeAuthor" style="position:absolute;Left:400px;Top:625px;width:1000px;" onclick="seeMemeDetail()">
+  <button id="fanintroduce" class="defaultButton" style="position:absolute;Left:1150px;Top:480px;width:200px;height: 40px;" onclick="openFanPage()">粉丝介绍→</button>
+  <div style="position:fixed;Left:50px;Top:425px;width:1000px;font-size: larger;text-align: left">
+    <h4>精彩视频：</h4>
+    <select id="play_list" style="text-align: left" onchange="clickPlay()">
+    </select>
+    <div id="video" style="width:80%;height: 400px"></div>
   </div>
 </body>
 
