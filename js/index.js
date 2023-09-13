@@ -113,6 +113,10 @@ const openFanPage = () => {
     window.open(`${baseURI}/info.html?fan`, '_blank');
 }
 
+const openDMCM = () => {
+    window.open(`https://dmcm.xor7.cn`, '_blank');
+}
+
 const loadConsoleMessage = () => {
     console.log("                            _ooOoo_ ");
     console.log("                           o8888888o ");
